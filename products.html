@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZyroWaste - Products</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="assets/images/logo.png" alt="ZyroWaste Logo" class="logo">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Our Products</h2>
+    <div class="products-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="assets/images/products/grocery-bag.jpg" alt="Grocery Bag">
+        <h3>Grocery Bag</h3>
+        <p>100% compostable, durable grocery bags.</p>
+        <p><b>Price:</b> ₹120 / pack of 50</p>
+        <button onclick="addToCart('Grocery Bag', 120)">Add to Cart</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="assets/images/products/food-packaging.jpg" alt="Food Packaging">
+        <h3>Food Packaging</h3>
+        <p>Eco-friendly PLA food packaging containers.</p>
+        <p><b>Price:</b> ₹200 / pack of 25</p>
+        <button onclick="addToCart('Food Packaging', 200)">Add to Cart</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="assets/images/products/mulch-film.jpg" alt="Mulch Film">
+        <h3>Agricultural Mulch Film</h3>
+        <p>Biodegradable mulch film for farms.</p>
+        <p><b>Price:</b> ₹500 / roll</p>
+        <button onclick="addToCart('Mulch Film', 500)">Add to Cart</button>
+      </div>
+    </div>
+    <br>
+    <a href="cart.html"><button>Go to Cart</button></a>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ZyroWaste. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/cart.js"></script>
+</body>
+</html>
